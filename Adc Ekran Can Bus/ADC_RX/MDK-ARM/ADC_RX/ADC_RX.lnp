@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"adc_rx\startup_stm32f103xb.o"
+"adc_rx\lcd.o"
+"adc_rx\main.o"
+"adc_rx\stm32f1xx_it.o"
+"adc_rx\stm32f1xx_hal_msp.o"
+"adc_rx\stm32f1xx_hal_gpio_ex.o"
+"adc_rx\stm32f1xx_hal_can.o"
+"adc_rx\stm32f1xx_hal.o"
+"adc_rx\stm32f1xx_hal_rcc.o"
+"adc_rx\stm32f1xx_hal_rcc_ex.o"
+"adc_rx\stm32f1xx_hal_gpio.o"
+"adc_rx\stm32f1xx_hal_dma.o"
+"adc_rx\stm32f1xx_hal_cortex.o"
+"adc_rx\stm32f1xx_hal_pwr.o"
+"adc_rx\stm32f1xx_hal_flash.o"
+"adc_rx\stm32f1xx_hal_flash_ex.o"
+"adc_rx\stm32f1xx_hal_exti.o"
+"adc_rx\stm32f1xx_hal_tim.o"
+"adc_rx\stm32f1xx_hal_tim_ex.o"
+"adc_rx\stm32f1xx_hal_uart.o"
+"adc_rx\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ADC_RX\ADC_RX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_RX.map" -o ADC_RX\ADC_RX.axf
